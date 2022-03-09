@@ -1,7 +1,7 @@
 -- import: fpm
 
 -- fpm.package: fifthtry.github.io/roboto
-zip: github.com/fifthtry/fifthtry.github.io/roboto/archive/refs/heads/main.zip
+zip: github.com/fifthtry/roboto/archive/refs/heads/main.zip
 
 
 -- fpm.font: Roboto
