@@ -4,6 +4,8 @@
 zip: github.com/fifthtry/roboto/archive/refs/heads/main.zip
 
 
+-- fpm.dependency: fifthtry.github.io/package-doc
+
 -- fpm.font: Roboto
 style: italic
 weight: 100
