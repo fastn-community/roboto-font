@@ -21,7 +21,7 @@ Inside your .ftd file to change for any specific token use:
 role: $fpm.type.headline-small
 ```
 
-[Details](the link to our new how to).
+[How to Use fonts](the link to our new how to).
 
 # License
 
