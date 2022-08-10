@@ -1,14 +1,15 @@
-# Inter Font
+# Roboto Font
 
-`fifthtry.github.io/inter` is a wrapper over [Inter font](https://github.com/rsms/inter).
+`fifthtry.github.io/roboto` is a wrapper over [Inter font](https://github.com/googlefonts/roboto/).
 
 # How To Use This Font
 
 include fifthtry.github.io/roboto package into FPM.ftd file
+
 ```ftd
 -- fpm.dependency: fifthtry.github.io/roboto
 
--- fpm.auto-import: fifthtry.github.io/roboto as inter
+-- fpm.auto-import: fifthtry.github.io/roboto as roboto
 ```
 
 Inside your .ftd file to change for any specific token use:
