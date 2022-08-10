@@ -1,6 +1,6 @@
 # Roboto Font
 
-`fifthtry.github.io/roboto` is a wrapper over [Inter font](https://github.com/googlefonts/roboto/).
+`fifthtry.github.io/roboto` is a wrapper over [Roboto font](https://github.com/googlefonts/roboto/).
 
 # How To Use This Font
 
