@@ -2,25 +2,6 @@
 
 [`fifthtry.github.io/roboto`](https://fifthtry.github.io/roboto) is a wrapper over [Roboto font](https://github.com/googlefonts/roboto/).
 
-# How To Use This Font
-
-include fifthtry.github.io/roboto package into FPM.ftd file
-
-```ftd
--- fpm.dependency: fifthtry.github.io/roboto
-
--- fpm.auto-import: fifthtry.github.io/roboto as roboto
-```
-
-Inside your .ftd file to change for any specific token use:
-
-```
--- fpm.type.headline-small.font: $roboto.fonts.roboto
-
--- ftd.text:
-role: $fpm.type.headline-small
-```
-
 [How to Use fonts](https://fpm.dev/how-to/custom-fonts/).
 
 # License
