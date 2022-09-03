@@ -2,7 +2,7 @@
 
 -- fpm.package: fifthtry.github.io/roboto
 zip: github.com/fifthtry/roboto/archive/refs/heads/main.zip
-base: https://raw.githubusercontent.com/fifthtry/roboto/main
+download-base-url: https://raw.githubusercontent.com/fifthtry/roboto/main
 
 
 -- fpm.dependency: fifthtry.github.io/package-doc
