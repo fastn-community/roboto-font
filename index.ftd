@@ -64,7 +64,7 @@ include fifthtry.github.io/roboto package into FPM.ftd file
 
 Inside your .ftd file to change for any specific token use:
 
-\-- fpm.type.headline-small.font: $inter.fonts.Roboto
+\-- fpm.type.headline-small.font: $roboto.fonts.Roboto
 
 \-- ftd.text:
 role: $fpm.type.headline-small
