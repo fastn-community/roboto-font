@@ -3,11 +3,9 @@
 -- import: fifthtry.github.io/roboto/assets as roboto-assets
 -- import: fpm
 
-
--- boolean is-mobile: false
-
--- is-mobile: true
-if: $ftd.device == mobile
+;; -- import: fifthtry.github.io/roboto/doc as pd
+;; -- import: fifthtry.github.io/roboto/typography as tf
+;; -- import: fifthtry.github.io/roboto/assets as roboto-assets
 
 
 
@@ -21,11 +19,22 @@ line-height: 56
 size: 48
 letter-spacing: 0
 
--- ftd.type roboto-font: $roboto-assets.fonts.Roboto
-desktop: $roboto-demo
-mobile: $roboto-demo
-xl: $roboto-demo
-weight: 400
+
+-- ftd.type roboto-font-desktop:
+size.px: 40
+weight: 900
+font-family: $roboto-assets.fonts.Roboto
+
+
+-- ftd.type roboto-font-mobile:
+size.px: 40
+weight: 900
+font-family: $roboto-assets.fonts.Roboto
+
+
+-- ftd.responsive-type roboto-font:
+desktop: $roboto-font-desktop
+mobile: $roboto-font-mobile
 
 -- ftd.type roboto-font-heading: $roboto-assets.fonts.Roboto
 desktop: $roboto-demo-heading
@@ -34,11 +43,11 @@ xl: $roboto-demo-heading
 weight: 400
 
 -- ftd.column:
-width: fill
-padding-horizontal: 50
-padding-horizontal if $is-mobile: 20
-background-color: $fpm.color.main.background.base
-id: parent
+width: fill-container
+padding-horizontal.px: 50
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.base
+;;id: parent
 
 
 -- pd.package: Roboto - fpm font
@@ -54,7 +63,7 @@ This component consist of Google Roboto font with all it's styles from Thin-100 
 
 
 
--- pd.hidden-code: How to use
+-- pd.output: How to use
 
 include fifthtry.github.io/roboto package into FPM.ftd file
 
@@ -69,157 +78,14 @@ Inside your .ftd file to change for any specific token use:
 \-- ftd.text:
 role: $fpm.type.headline-small
 
--- container: parent
-
 
 -- tf.h2: `roboto-font` hairline 18px:
 
 -- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
 role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: hairline
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
 
--- tf.h2: `roboto-font` hairline italic 18px:
+-- end: ftd.column
 
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: hairline italic
 
--- tf.h2: `roboto-font` extra-light 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: extra-light
-
--- tf.h2: `roboto-font` extra-light italic 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: extra-light italic
-
--- tf.h2: `roboto-font` light 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: light
-
--- tf.h2: `roboto-font` light italic 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: light italic
-
--- tf.h2: `roboto-font` regular 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: regular
-
--- tf.h2: `roboto-font` regular strike through 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: regular strike
-
--- tf.h2: `roboto-font` regular underline 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: regular underline
-
--- tf.h2: `roboto-font` regular italic 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: regular italic
-
--- tf.h2: `roboto-font` medium 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: medium
-
--- tf.h2: `roboto-font`  medium italic 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: medium italic
-
--- tf.h2: `roboto-font` semi-bold 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: semi-bold
-
--- tf.h2: `roboto-font`  semi-bold italic 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: semi-bold italic
-
--- tf.h2: `roboto-font` bold 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: bold
-
--- tf.h2: `roboto-font` bold italic 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: bold italic
-
--- tf.h2: `roboto-font` heavy 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: heavy
-
--- tf.h2: `roboto-font` heavy italic 18px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-style: heavy italic
-
--- tf.h2: `roboto-font` heading regular 48px:
-
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
-role: $roboto-font-heading
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-10
-style: regular
