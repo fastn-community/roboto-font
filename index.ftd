@@ -3,10 +3,6 @@
 -- import: fifthtry.github.io/roboto/assets as roboto-assets
 -- import: fpm
 
-;; -- import: fifthtry.github.io/roboto/doc as pd
-;; -- import: fifthtry.github.io/roboto/typography as tf
-;; -- import: fifthtry.github.io/roboto/assets as roboto-assets
-
 
 
 -- ftd.font-size roboto-demo:
