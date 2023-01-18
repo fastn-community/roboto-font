@@ -62,7 +62,7 @@ This component consist of Google Roboto font with all it's styles from Thin-100 
 
 -- tf.h3: How to use
 
-include fifthtry.github.io/roboto package into FPM.ftd file
+Include fifthtry.github.io/roboto package into FPM.ftd file
 
 -- cb.code:
 lang: ftd
@@ -74,7 +74,8 @@ lang: ftd
 
 -- tf.markdown:
 
-Inside your .ftd file to change for any specific token use:
+Inside your .ftd file to add roboto dependency and create custom font as given 
+in below code:
 
 -- cb.code:
 lang: ftd
