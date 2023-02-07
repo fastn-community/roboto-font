@@ -1,7 +1,7 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/code-block as cb
 -- import: fifthtry.github.io/package-doc/typography as tf
--- import: fifthtry.github.io/roboto/assets as roboto-assets
+-- import: fifthtry.github.io/roboto-font-font/assets as roboto-assets
 -- import: fastn
 
 
@@ -48,7 +48,7 @@ background.solid: $inherited.colors.background.base
 
 
 -- pd.package: Roboto - fastn font
-name: fifthtry.github.io/Roboto
+name: fifthtry.github.io/roboto-font
 
 This component consist of Google Roboto font with all it's styles from Thin-100 to Black-900 Italic.
 
@@ -62,12 +62,12 @@ This component consist of Google Roboto font with all it's styles from Thin-100 
 
 -- tf.h3: How to use
 
-Include fifthtry.github.io/roboto package into FASTN.ftd file
+Include fifthtry.github.io/roboto-font package into FASTN.ftd file
 
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fifthtry.github.io/roboto as roboto
+\-- fastn.dependency: fifthtry.github.io/roboto-font as roboto
 
 \-- fastn.auto-import: roboto
 
@@ -80,7 +80,7 @@ in below code:
 -- cb.code:
 lang: ftd
 
-\-- import: fifthtry.github.io/roboto/assets as roboto-assets
+\-- import: fifthtry.github.io/roboto-font/assets as roboto-assets
 \-- import: fastn
 
 \-- How to: define a custom font:-
