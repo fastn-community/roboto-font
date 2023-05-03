@@ -1,123 +1,103 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
--- import: fifthtry.github.io/package-doc/code-block as cb
--- import: fifthtry.github.io/package-doc/typography as tf
--- import: fifthtry.github.io/roboto-font-font/assets as roboto-assets
--- import: fastn
+-- import: fifthtry.github.io/package-doc/forest-theme as ds
+-- import: fastn-community.github.io/roboto-font/custom
+-- import: fifthtry.github.io/package-doc/footer
 
 
 
--- ftd.font-size roboto-demo:
-line-height: 36
-size: 22
-letter-spacing: 0
 
--- ftd.font-size roboto-demo-heading:
-line-height: 56
-size: 48
-letter-spacing: 0
+-- ds.page: 
+show-footer: true
+site-name: `roboto-font`
 
+-- ds.page.footer:
 
--- ftd.type roboto-font-desktop:
-size.px: 40
-weight: 900
-font-family: $roboto-assets.fonts.Roboto
+-- footer.fastn-footer:
 
+-- end: ds.page.footer
 
--- ftd.type roboto-font-mobile:
-size.px: 40
-weight: 900
-font-family: $roboto-assets.fonts.Roboto
+-- pd.package: FTD roboto-font package
+name: fastn-community.github.io/roboto-font
 
+This FTD font `roboto` can be used for your ftd web projects. 
 
--- ftd.responsive-type roboto-font:
-desktop: $roboto-font-desktop
-mobile: $roboto-font-mobile
+To Use this roboto inside `FTD` project visit [roboto-typography](https://fastn-community.github.io/roboto-typography).
 
--- ftd.type roboto-font-heading: $roboto-assets.fonts.Roboto
-desktop: $roboto-demo-heading
-mobile: $roboto-demo-heading
-xl: $roboto-demo-heading
-weight: 400
+-- ds.h3: roboto various sizes
 
--- ftd.column:
-width: fill-container
-padding-horizontal.px: 50
-padding-horizontal.px if { ftd.device == "mobile" }: 20
-background.solid: $inherited.colors.background.base
-;;id: parent
-
-
--- pd.package: Roboto - fastn font
-name: fifthtry.github.io/roboto-font
-
-This component consist of Google Roboto font with all it's styles from Thin-100 to Black-900 Italic.
-
-
--- pd.component: Roboto - fastn font
-name: https://github.com/FifthTry/roboto
-
-This component consist of Google Roboto font with all it's styles from Thin-100 to Black-900 Italic.
-
-
-
--- tf.h3: How to use
-
-Include fifthtry.github.io/roboto-font package into FASTN.ftd file
-
--- cb.code:
-lang: ftd
-
-\-- fastn.dependency: fifthtry.github.io/roboto-font as roboto
-
-\-- fastn.auto-import: roboto
-
-
--- tf.markdown:
-
-Inside your .ftd file to add roboto dependency and create custom font as given 
-in below code:
-
--- cb.code:
-lang: ftd
-
-\-- import: fifthtry.github.io/roboto-font/assets as roboto-assets
-\-- import: fastn
-
-\-- How to: define a custom font:-
-
-\-- ftd.type roboto-font-desktop:
-size.px: 40
-weight: 900
-font-family: $roboto-assets.fonts.Roboto
-
-
-\-- ftd.type roboto-font-mobile:
-size.px: 40
-weight: 900
-font-family: $roboto-assets.fonts.Roboto
-
-
-\-- ftd.responsive-type roboto-font:
-desktop: $roboto-font-desktop
-mobile: $roboto-font-mobile
-
-
-\-- How to: invoke a custom font:-
-
-\-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
-role: $roboto-font
+-- ftd.text: 
+role: $custom.roboto-size-12-400
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
 
--- tf.h2: `roboto-font` weight 900 40px:
+`font-size: 12px, font-weight: 400` 
 
-See below how it will render on your browser:
+👉 The quick brown fox jumps over the lazy dog 
 
--- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
-role: $roboto-font
+
+-- ftd.text: 
+role: $custom.roboto-size-12-800
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
 
--- end: ftd.column
+`font-size: 12px, font-weight: 500` 
 
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text: 
+role: $custom.roboto-size-12-800
+color: $inherited.colors.text-strong
+
+`font-size: 12px, font-weight: 800` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+
+-- ftd.text: 
+role: $custom.roboto-size-18-400
+color: $inherited.colors.text-strong
+
+`font-size: 18px, font-weight: 400` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text: 
+role: $custom.roboto-size-18-500
+color: $inherited.colors.text-strong
+
+`font-size: 18px, font-weight: 500` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text: 
+role: $custom.roboto-size-18-800
+color: $inherited.colors.text-strong
+
+`font-size: 18px, font-weight: 800` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text: 
+role: $custom.roboto-size-48-400
+color: $inherited.colors.text-strong
+
+`font-size: 48px, font-weight: 400` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text: 
+role: $custom.roboto-size-48-500
+color: $inherited.colors.text-strong
+
+`font-size: 48px, font-weight: 500` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text:
+role: $custom.roboto-size-48-800
+color: $inherited.colors.text-strong
+
+`font-size: 48px, font-weight: 800` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+-- end: ds.page
 
