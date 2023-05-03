@@ -13,6 +13,7 @@ env:
 
 jobs:
   build:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,13 +21,13 @@ jobs:
       - name: Install fastn
         id: install_fastn
         continue-on-error: false
-        run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ftd-lang/fastn/main/install.sh)"
+        run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/fastn-stack/fastn/main/install.sh)"
       - name: Build the pages with fastn
         id: build
         continue-on-error: false
         run: |
           echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
-          fastn build --base=/$CI_REPOSITORY_NAME/ 
+          fastn build --base=/$CI_REPOSITORY_NAME/
       - name: copy CNAME
         run: '(test -f CNAME && cp CNAME .build) || echo "CNAME does not exist, skipping step"'
       - name: Deploy
